@@ -30,8 +30,8 @@ An academic Android project combining rescue request management, location tracki
 | `FloodPrediction/Android/FloodRescureSystem/` | Android Studio project (original folder spelling retained) |
 | `FloodPrediction/php/flood_prediction/` | PHP endpoints |
 | `FloodPrediction/php/flood_prediction/Prediction/` | PHP/Python bridge and CSV files |
-| `FloodPrediction/floodprediction.sql` | Schema and original sample records |
-| `FloodPrediction/FloodPrediction.apk` | Original prebuilt Android APK |
+| `FloodPrediction/floodprediction.sql` | Schema with original sample records removed |
+| Original prebuilt APK | Omitted because it may embed the old Maps key; rebuild from source |
 
 ## How the application works
 
@@ -61,7 +61,7 @@ cd Flood-Prediction-Management
 - Install a local Apache/PHP/MySQL stack such as XAMPP.
 - Copy `FloodPrediction/php/flood_prediction` into the web server document root (for example, `htdocs/flood_prediction`).
 - Create a database named `floodprediction`.
-- Import `FloodPrediction/floodprediction.sql` into that database. Review/remove original sample records before demonstrations.
+- Import `FloodPrediction/floodprediction.sql` into that database. Original sample records were removed during migration.
 - Edit `connection.php` to match your local database host, username, password, and database name.
 - Start Apache and MySQL.
 
@@ -132,3 +132,8 @@ The included Android example tests are templates, not evidence of end-to-end cor
 > This academic project connects an Android Java app to a PHP/MySQL backend for rescue requests and location-related workflows. Volley sends HTTP requests, PHP handles database operations, and Google Maps supports tracking screens. The repository also contains a rainfall/water-level prediction interface, but its committed Python script is a placeholder, so that component needs restoration before I can demonstrate real predictions.
 
 flow: screen → Volley request → PHP endpoint → database → response → screen.
+
+
+## Migration notes
+
+Source files copied from the old account. Original commit history remains in the old repository. The embedded Maps key was replaced with YOUR_GOOGLE_MAPS_API_KEY, sample database records were removed, and the original APK was omitted because it may embed the old key. No end-to-end runtime testing was performed during migration.
