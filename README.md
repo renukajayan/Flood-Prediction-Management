@@ -127,14 +127,8 @@ This is a learning prototype, not an emergency service. Before any public deploy
 
 The included Android example tests are templates, not evidence of end-to-end correctness.
 
-## Interview revision
-
-A concise, accurate explanation:
+## Explanation:
 
 > This academic project connects an Android Java app to a PHP/MySQL backend for rescue requests and location-related workflows. Volley sends HTTP requests, PHP handles database operations, and Google Maps supports tracking screens. The repository also contains a rainfall/water-level prediction interface, but its committed Python script is a placeholder, so that component needs restoration before I can demonstrate real predictions.
 
-Practise explaining one complete flow from screen → Volley request → PHP endpoint → database → response → screen. Describe your own contribution separately from the overall project.
-
-## Origin
-
-Migrated from [renukajayan97/flood-prediction](https://github.com/renukajayan97/flood-prediction). Original source layout and project assets are retained. No license was included in the original repository.
+flow: screen → Volley request → PHP endpoint → database → response → screen.
